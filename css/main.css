@@ -1,0 +1,18 @@
+body {
+	margin: 0;
+}
+.container {
+	margin: 0 auto;
+}
+.container .tile {
+	display: inline-block;
+	vertical-align: top;
+	width:200px;
+	height:200px;
+	/*width: 133.3px;
+	height: 120px;*/
+	background: #eee;
+	background-repeat: no-repeat;
+	background-size: 300%;
+}
+

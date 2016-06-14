@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3154997, 2016-01-16T23:08:34-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: LinotypeUnivers-430Regular by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/univers-lt/com-430-basic-regular/
+ * Copyright: Copyright &#x00A9; 2005 - 2009 Linotype GmbH, www.linotype.com. All rights reserved. This font software may not be reproduced, modified, disclosed or transferred without the express written approval of Linotype GmbH. Univers is a trademark of Linotype Cor
+ * Licensed pageviews: 250,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3154997
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/302435");
+
+  
+@font-face {font-family: 'LinotypeUnivers-430Regular';src: url('../webfonts/302435_0_0.eot');src: url('../webfonts/302435_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/302435_0_0.woff2') format('woff2'),url('../webfonts/302435_0_0.woff') format('woff'),url('../webfonts/302435_0_0.ttf') format('truetype');}
+ 

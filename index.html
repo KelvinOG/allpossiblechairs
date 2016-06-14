@@ -1,0 +1,1080 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+    <head>
+       	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/combinatorics.js"></script> <!--chair animation-->
+    	<script type="text/javascript" src="js/div5.js"></script><!--sorting system-->
+        <script type="text/javascript" src="js/bookflip.js"></script> <!--book presentation plugin-->
+        <script src="js/jquery-1.11.3.js"></script>
+    	<link rel="stylesheet" href="css/css.css" />
+        <link rel="stylesheet" href="css/main.css" />        
+        <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
+        <link href="js/jquery.booklet.latest.css" type="text/css" rel="stylesheet" media="screen, projection, tv" />
+        <title>All Possible Chairs</title>
+    </head>
+    <body>
+<!--print function-->
+        <div class="folio">
+            <li class="folio_img"><img src="images_print_frame/12.png" width="23px;"></li>
+            <li class="folio_order"></li>
+        </div>
+<!--intro-->
+      <div id="intro">
+             <li><img class="intro_frame" src="images/intro2.gif"></li>
+            <li height="30px"></li>
+           <li style="font-size:26px; line-height:13px; padding-top:55px;"> All Possible Chairs </li>
+           <li style="font-size:16px;padding-bottom:20px;"> A Profile of Monobloc Chair</li>
+        </div>
+<!--top menu-->
+    	<div id="title">
+            <li><a href="#" onClick="history.go(0)"><img src="images/icon_home.svg" width="30px;"></a>    <!--<font style="font-family: u430r">A Profile of Monobloc Chair</font>--></li>              
+        </div>
+        <div id="about_btn"><a href="#" onclick="javascript:about_open()">About</a> 
+        </div>
+    	<div id="menu">	 
+    		<li class="m-sub">Search</li>
+        </div>
+        <div id="link">
+            <li class="linkli1">
+                    <a> 
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="-579 370.8 63.2 53.2" style="enable-background:new -579 370.8 63.2 53.2;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M-578.5,370.4c-0.4,0.1-0.6,0.4-0.6,0.8v46.1c0,0.4,0.4,0.8,0.8,0.8h23.6c3.3,0,6,2.4,6.4,5.6c0,0.6,1,1,1.4,0.5
+                                c0.1,0,0.1-0.1,0.1-0.1c0.1-0.1,0.2-0.3,0.2-0.4c0.4-3.1,3.1-5.6,6.4-5.6h23.6c0.4,0,0.8-0.4,0.8-0.8v-46.1c0-0.4-0.4-0.8-0.8-0.8
+                                h-23.6c-3.2,0-6,1.9-7.3,4.6c-1.3-2.7-4.1-4.6-7.3-4.6h-23.6C-578.4,370.4-578.4,370.4-578.5,370.4
+                                C-578.4,370.4-578.5,370.4-578.5,370.4L-578.5,370.4z M-577.5,372h22.8c3.6,0,6.5,2.9,6.5,6.4V420c-1.5-2.1-3.8-3.5-6.5-3.5h-22.8
+                                V372L-577.5,372z M-540.2,372h22.7v44.5h-22.7c-2.7,0-5,1.4-6.5,3.5v-41.6C-546.7,374.9-543.8,372-540.2,372L-540.2,372z"/>
+                            <path d="M-547.4,424.9c-0.2,0-0.3,0-0.5-0.1c-0.5-0.2-0.9-0.6-0.9-1.1c-0.4-2.9-2.9-5.1-5.9-5.1h-23.6c-0.7,0-1.3-0.6-1.3-1.3
+                                v-46.1c0-0.6,0.4-1.1,1-1.3l0.2,0h23.6c3,0,5.7,1.6,7.3,4.1c1.6-2.5,4.3-4.1,7.3-4.1h23.6c0.7,0,1.3,0.6,1.3,1.3v46.1
+                                c0,0.7-0.6,1.3-1.3,1.3h-23.6c-3,0-5.5,2.2-5.9,5.2c0,0.2-0.1,0.4-0.2,0.6c-0.1,0.1-0.1,0.2-0.3,0.3
+                                C-546.8,424.8-547.1,424.9-547.4,424.9z M-578.4,370.9c-0.1,0-0.2,0.1-0.2,0.3v46.1c0,0.1,0.2,0.3,0.3,0.3h23.6
+                                c3.6,0,6.5,2.5,6.9,6c0,0.1,0.1,0.2,0.2,0.3c0.1,0,0.2,0,0.3,0l0,0l0.2-0.2c0,0,0,0,0-0.1c0.4-3.4,3.4-6,6.9-6h23.6
+                                c0.1,0,0.3-0.2,0.3-0.3v-46.1c0-0.1-0.2-0.3-0.3-0.3h-23.6c-2.9,0-5.6,1.7-6.8,4.3l-0.5,0.9l-0.5-0.9c-1.3-2.6-4-4.3-6.8-4.3
+                                H-578.4z M-547.1,421.5v-43.2c0-3.8,3.1-6.9,7-6.9h23.2V417h-23.2c-2.4,0-4.6,1.2-6.1,3.3L-547.1,421.5z M-540.2,372.5
+                                c-3.3,0-6,2.6-6,5.9v40.2c1.6-1.7,3.7-2.6,6-2.6h22.2v-43.5H-540.2z M-547.8,421.5l-0.9-1.3c-1.5-2.1-3.7-3.3-6.1-3.3H-578v-45.5
+                                h23.3c3.9,0,7,3.1,7,6.9V421.5z M-577,416h22.3c2.3,0,4.4,0.9,6,2.6v-40.2c0-3.3-2.7-5.9-6-5.9H-577V416z"/>
+                        </g>
+                    </g>
+                    </svg>
+                 </a>                
+            </li>
+        </div>
+<!--search-->
+        <div id="search"> 
+              <div id="citem_clear">x</div>
+              <div id="citem_resize"></div>
+              <div id="citem_results">No chairs found.</div>
+                    <div id="m-cbox">
+                        <li class="price"><input id="c1" class="c" type="checkbox" value="$1&#8211;10"></li>
+                		<li class="price"><input id="c2" class="c" type="checkbox" value="$11&#8211;30"></li>
+                		<li class="price"><input id="c3" class="c" type="checkbox" value="$30&#8211;60"></li>
+                		<li class="price"><input id="c4" class="c" type="checkbox" value="$60&#8211;"></li>	
+                   </div>
+                   <div id="view">
+                         <div id="view_btn2"><img src="images/icon_print.svg" ></div>
+                   </div>
+                    <li class="caption0"> </li>
+<!--1: $1-10-->
+            	<div id="chairs1" class="cnames">
+            	    <script type="text/javascript">
+                       $('.citem').on('mouseenter', function(){
+                        $('.citem_hide').class('citem_show');
+                       });
+                    </script>
+                    <div class="caption" >
+                       <ul>
+                        <li class="citem" >
+                            <a href="http://www.flatoutentertainment.com.au/service/tables-and-chairs" target="_blank" alt="1" style="cursor:url(images_cursor/1.png), default;" >1 White Plastic Stackable Chairs</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem"  >
+                            <a href="http://www.omegaeventservices.com/chairs" target="_blank" alt="2" style="cursor:url(images_cursor/2.png), default;">White Bistro Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="" style="cursor:url(images_cursor/3.png), default;"> Chair Pippee &ndash; White</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.cateringhiredevon.com/shop/chair-hire-devon/white-patio-chair-hire-devon/" target="_blank" alt="4" style="cursor:url(images_cursor/4.png), default;">White Patio Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.blasteventhire.co.uk/products/patio-chair-plastic" target="_blank" alt="5" style="cursor:url(images_cursor/5.png), default;">Patio Chair Plastic</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.canberraspitsandpartyhire.com/white-stacking-resin-chairs-hire.html" target="_blank" alt="6" style="cursor:url(images_cursor/6.png), default;">White Stacking Resin Chairs Hire</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.globalsources.com/si/AS/Fuzhou-Xurong/6008831244176/pdtl/White-Plastic-Dining-Chair/1074302874.htm" target="_blank" alt="7" style="cursor:url(images_cursor/7.png), default;">White Plastic Dining Chair With Arm for Restaurants</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alfrescohire.com/garden-furniture#prettyPhoto" target="_blank" alt="8" style="cursor:url(images_cursor/8.png), default;">White Plastic Patio Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://eventhireuk.com/resin-furniture-hire/bistro-chair-white" target="_blank" alt="9" style="cursor:url(images_cursor/9.png), default;">Bistro Chair White</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.plasticboxshop.co.uk/home-storage-c1/garden-and-outdoor-plastics-c6/plastic-chairs-c70/white-plastic-garden-chair-pack-of-50-11840-p370" target="_blank" alt="10" style="cursor:url(images_cursor/10.png), default;">White Plastic Garden Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alibaba.com/product-detail/Factory-Direct-High-Quality-Slat-Resin_60054580563.html" target="_blank" alt="11" style="cursor:url(images_cursor/11.png), default;">Factory Direct High Quality Slat Resin Plastic White Folding Chair for Party Rental Wedding Wholesale Garden Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alibaba.com/product-detail/Factory-Direct-High-Quality-Slat-Resin_60054580563.html" target="_blank" alt="12" style="cursor:url(images_cursor/12.png), default;">Factory Direct High Quality Slat Resin Plastic White Folding Chair for Party Rental Wedding Wholesale Garden Chair</a>
+                        </li>
+                     </ul>
+                    </div>  
+                </div>
+<!--2:$11-30-->
+                <div id="chairs2" class="cnames">
+                   <div class="img_whole"></div>
+                    <div class="caption">
+                        <ul>
+                            <li class="citem">
+                                <a href="" alt="14" style="cursor:url(images_cursor/13.png), default;">Plastic Modern Stacking Patio Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.farmandfleet.com/products/810572-adams-manufacturing-calypso-mid-back-chair.html" target="_blank" alt="14" style="cursor:url(images_cursor/14.png), default;" >Adams Manufacturing Calypso Mid &ndash; Back Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.diy.com/departments/cuba-plastic-chair/535878_BQ.prd" target="_blank" alt="15" style="cursor:url(images_cursor/15.png), default;" >Cuba Plastic Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.pandorabay.it/prodotti/mobili-da-giardino/mobili-da-giardino-in-resina-grosfillex/sedie-e-poltrone-in-resina/sedia-grosfillex-bistrot-antracite-2-pezzi.html" target="_blank" alt="16" style="cursor:url(images_cursor/16.png), default;" >Sedia Grosfillex BISTROT Antracite - 2 pezzi</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.centroarredo.net/p-1842_sedia-mod-stella-di-mare-colore-bianco.html?utm_source=twenga&utm_campaign=twenga&utm_medium=cpc" target="_blank" alt="17" style="cursor:url(images_cursor/17.png), default;" >Sedia mod. stella di mare colore bianco</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.tableschairsbarstools.com/tcb-grf-us282304.html" target="_blank" alt="18" style="cursor:url(images_cursor/18.png), default;" >White Grosfillex Resin Finish Miami Lowback Restaurant Dining Patio Poolside Chair</a>
+                            </li>
+                         </ul>
+                    </div>     
+                </div>
+ <!--3: $30-60-->
+                <div id="chairs3" class="cnames">              
+                    <div class="caption">
+                         <ul>
+                            <li class="citem">
+                                <a href="http://www.tableschairsbarstools.com/tcb-grf-us421004.html" target="_blank" alt="19" style="cursor:url(images_cursor/19.png), default;">White Trinidad High Back Grosfillex Resin Finish Commercial Restaurant Dining Patio Poolside Arm Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.foodservicewarehouse.com/grosfillex/us0230/p338474.aspx" target="_blank" alt="20" style="cursor:url(images_cursor/20.png), default;">Miami Lowback Stacking Armchair</a>
+                            </li>
+                         </ul>
+                    </div>    
+                </div>
+<!--4: $60~-->
+                <div id="chairs4" class="cnames">
+                   <div class="img_whole"></div>
+                    <div class="caption">
+                        <ul>
+                            <li class="citem">
+                                <a href="http://www.amazon.co.uk/Scab-Design-Splendida-Stacking-Chair/dp/B00KE1K0Z0" target="_blank" alt="21" style="cursor:url(images_cursor/21.png), default;">Scab Design Splendida High Back Stacking Chair White - Garden Armchair - Plastic - Patio Chair in White - Anti static Finish &ndash; Outdoor Dining Armchair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.hireking.com.au/chair-hire-perth.shtml" target="_blank" alt="18" style="cursor:url(images_cursor/22.png), default;">White Bistro Chair Hire</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.kettlerusa.com/patio-furniture/resin/2021" target="_blank" alt="18" style="cursor:url(images_cursor/23.png), default;">Lord Stack Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.stardust.com/louis-ghost.html" target="_blank" alt="18" style="cursor:url(images_cursor/24.png), default;">Kartell Louis Ghost Chair by Philippe Starck</a>
+                            </li>
+                         </ul>
+                    </div>     
+                </div>
+ <!--1,2: $1-30-->
+                <div id="chairs5" class="cnames">
+                   <div class="img_whole"></div>
+                    <div class="caption">
+                        <ul>
+                         <li class="citem" >
+                            <a href="http://www.flatoutentertainment.com.au/service/tables-and-chairs" target="_blank" alt="1" style="cursor:url(images_cursor/1.png), default;" >1 White Plastic Stackable Chairs</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem"  >
+                            <a href="http://www.omegaeventservices.com/chairs" target="_blank" alt="2" style="cursor:url(images_cursor/2.png), default;">White Bistro Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="" style="cursor:url(images_cursor/3.png), default;"> Chair Pippee &ndash; White</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.cateringhiredevon.com/shop/chair-hire-devon/white-patio-chair-hire-devon/" target="_blank" alt="4" style="cursor:url(images_cursor/4.png), default;">White Patio Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.blasteventhire.co.uk/products/patio-chair-plastic" target="_blank" alt="5" style="cursor:url(images_cursor/5.png), default;">Patio Chair Plastic</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.canberraspitsandpartyhire.com/white-stacking-resin-chairs-hire.html" target="_blank" alt="6" style="cursor:url(images_cursor/6.png), default;">White Stacking Resin Chairs Hire</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.globalsources.com/si/AS/Fuzhou-Xurong/6008831244176/pdtl/White-Plastic-Dining-Chair/1074302874.htm" target="_blank" alt="7" style="cursor:url(images_cursor/7.png), default;">White Plastic Dining Chair With Arm for Restaurants</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alfrescohire.com/garden-furniture#prettyPhoto" target="_blank" alt="8" style="cursor:url(images_cursor/8.png), default;">White Plastic Patio Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://eventhireuk.com/resin-furniture-hire/bistro-chair-white" target="_blank" alt="9" style="cursor:url(images_cursor/9.png), default;">Bistro Chair White</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.plasticboxshop.co.uk/home-storage-c1/garden-and-outdoor-plastics-c6/plastic-chairs-c70/white-plastic-garden-chair-pack-of-50-11840-p370" target="_blank" alt="10" style="cursor:url(images_cursor/10.png), default;">White Plastic Garden Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alibaba.com/product-detail/Factory-Direct-High-Quality-Slat-Resin_60054580563.html" target="_blank" alt="11" style="cursor:url(images_cursor/11.png), default;">Factory Direct High Quality Slat Resin Plastic White Folding Chair for Party Rental Wedding Wholesale Garden Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alibaba.com/product-detail/Factory-Direct-High-Quality-Slat-Resin_60054580563.html" target="_blank" alt="12" style="cursor:url(images_cursor/12.png), default;">Factory Direct High Quality Slat Resin Plastic White Folding Chair for Party Rental Wedding Wholesale Garden Chair</a>
+                        </li>
+                        <!--2-->
+                        <li class="citem">
+                                <a href="" alt="14" style="cursor:url(images_cursor/13.png), default;">Plastic Modern Stacking Patio Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.farmandfleet.com/products/810572-adams-manufacturing-calypso-mid-back-chair.html" target="_blank" alt="14" style="cursor:url(images_cursor/14.png), default;" >Adams Manufacturing Calypso Mid &ndash; Back Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.diy.com/departments/cuba-plastic-chair/535878_BQ.prd" target="_blank" alt="15" style="cursor:url(images_cursor/15.png), default;" >Cuba Plastic Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.pandorabay.it/prodotti/mobili-da-giardino/mobili-da-giardino-in-resina-grosfillex/sedie-e-poltrone-in-resina/sedia-grosfillex-bistrot-antracite-2-pezzi.html" target="_blank" alt="16" style="cursor:url(images_cursor/16.png), default;" >Sedia Grosfillex BISTROT Antracite - 2 pezzi</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.centroarredo.net/p-1842_sedia-mod-stella-di-mare-colore-bianco.html?utm_source=twenga&utm_campaign=twenga&utm_medium=cpc" target="_blank" alt="17" style="cursor:url(images_cursor/17.png), default;" >Sedia mod. stella di mare colore bianco</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.tableschairsbarstools.com/tcb-grf-us282304.html" target="_blank" alt="18" style="cursor:url(images_cursor/18.png), default;" >White Grosfillex Resin Finish Miami Lowback Restaurant Dining Patio Poolside Chair</a>
+                            </li>
+                         </ul>
+                    </div>     
+                </div>
+<!--2,3: $11-60-->
+                <div id="chairs6" class="cnames">
+                   <div class="img_whole"></div>
+                    <div class="caption">
+                        <ul>
+<!--2-->              
+                            <li class="citem">
+                                <a href="" alt="14" style="cursor:url(images_cursor/13.png), default;">Plastic Modern Stacking Patio Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.farmandfleet.com/products/810572-adams-manufacturing-calypso-mid-back-chair.html" target="_blank" alt="14" style="cursor:url(images_cursor/14.png), default;" >Adams Manufacturing Calypso Mid &ndash; Back Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.diy.com/departments/cuba-plastic-chair/535878_BQ.prd" target="_blank" alt="15" style="cursor:url(images_cursor/15.png), default;" >Cuba Plastic Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.pandorabay.it/prodotti/mobili-da-giardino/mobili-da-giardino-in-resina-grosfillex/sedie-e-poltrone-in-resina/sedia-grosfillex-bistrot-antracite-2-pezzi.html" target="_blank" alt="16" style="cursor:url(images_cursor/16.png), default;" >Sedia Grosfillex BISTROT Antracite - 2 pezzi</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.centroarredo.net/p-1842_sedia-mod-stella-di-mare-colore-bianco.html?utm_source=twenga&utm_campaign=twenga&utm_medium=cpc" target="_blank" alt="17" style="cursor:url(images_cursor/17.png), default;" >Sedia mod. stella di mare colore bianco</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.tableschairsbarstools.com/tcb-grf-us282304.html" target="_blank" alt="18" style="cursor:url(images_cursor/18.png), default;" >White Grosfillex Resin Finish Miami Lowback Restaurant Dining Patio Poolside Chair</a>
+                            </li>     
+<!--3-->
+                            <li class="citem">
+                                <a href="http://www.tableschairsbarstools.com/tcb-grf-us421004.html" target="_blank" alt="19" style="cursor:url(images_cursor/19.png), default;">White Trinidad High Back Grosfillex Resin Finish Commercial Restaurant Dining Patio Poolside Arm Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.foodservicewarehouse.com/grosfillex/us0230/p338474.aspx" target="_blank" alt="20" style="cursor:url(images_cursor/20.png), default;">Miami Lowback Stacking Armchair</a>
+                            </li>
+                        </ul>
+                    </div>     
+                </div>
+
+<!--3,4: $30~-->
+                <div id="chairs7" class="cnames">
+                   <div class="img_whole"></div>
+                    <div class="caption">
+                        <ul>
+<!--3-->
+                            <li class="citem">
+                                <a href="http://www.tableschairsbarstools.com/tcb-grf-us421004.html" target="_blank" alt="19" style="cursor:url(images_cursor/19.png), default;">White Trinidad High Back Grosfillex Resin Finish Commercial Restaurant Dining Patio Poolside Arm Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.foodservicewarehouse.com/grosfillex/us0230/p338474.aspx" target="_blank" alt="20" style="cursor:url(images_cursor/20.png), default;">Miami Lowback Stacking Armchair</a>
+                            </li>
+<!--4-->                       
+                            <li class="citem">
+                                <a href="http://www.amazon.co.uk/Scab-Design-Splendida-Stacking-Chair/dp/B00KE1K0Z0" target="_blank" alt="21" style="cursor:url(images_cursor/21.png), default;">Scab Design Splendida High Back Stacking Chair White - Garden Armchair - Plastic - Patio Chair in White - Anti static Finish &ndash; Outdoor Dining Armchair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.hireking.com.au/chair-hire-perth.shtml" target="_blank" alt="18" style="cursor:url(images_cursor/22.png), default;">White Bistro Chair Hire</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.kettlerusa.com/patio-furniture/resin/2021" target="_blank" alt="18" style="cursor:url(images_cursor/23.png), default;">Lord Stack Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.stardust.com/louis-ghost.html" target="_blank" alt="18" style="cursor:url(images_cursor/24.png), default;">Kartell Louis Ghost Chair by Philippe Starck</a>
+                            </li>    
+                        </ul>
+                    </div>    
+                </div>
+<!--1,3: $1-10,30-60-->        
+                <div id="chairs8" class="cnames">
+                   <div class="img_whole"></div>
+                   <div class="caption">
+                        <!--checkbox 8 1-10, 30-60 -->
+                         <ul>
+                        <li class="citem" >
+                            <a href="http://www.flatoutentertainment.com.au/service/tables-and-chairs" target="_blank" alt="1" style="cursor:url(images_cursor/1.png), default;" >1 White Plastic Stackable Chairs</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem"  >
+                            <a href="http://www.omegaeventservices.com/chairs" target="_blank" alt="2" style="cursor:url(images_cursor/2.png), default;">White Bistro Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="" style="cursor:url(images_cursor/3.png), default;"> Chair Pippee &ndash; White</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.cateringhiredevon.com/shop/chair-hire-devon/white-patio-chair-hire-devon/" target="_blank" alt="4" style="cursor:url(images_cursor/4.png), default;">White Patio Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.blasteventhire.co.uk/products/patio-chair-plastic" target="_blank" alt="5" style="cursor:url(images_cursor/5.png), default;">Patio Chair Plastic</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.canberraspitsandpartyhire.com/white-stacking-resin-chairs-hire.html" target="_blank" alt="6" style="cursor:url(images_cursor/6.png), default;">White Stacking Resin Chairs Hire</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.globalsources.com/si/AS/Fuzhou-Xurong/6008831244176/pdtl/White-Plastic-Dining-Chair/1074302874.htm" target="_blank" alt="7" style="cursor:url(images_cursor/7.png), default;">White Plastic Dining Chair With Arm for Restaurants</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alfrescohire.com/garden-furniture#prettyPhoto" target="_blank" alt="8" style="cursor:url(images_cursor/8.png), default;">White Plastic Patio Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://eventhireuk.com/resin-furniture-hire/bistro-chair-white" target="_blank" alt="9" style="cursor:url(images_cursor/9.png), default;">Bistro Chair White</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.plasticboxshop.co.uk/home-storage-c1/garden-and-outdoor-plastics-c6/plastic-chairs-c70/white-plastic-garden-chair-pack-of-50-11840-p370" target="_blank" alt="10" style="cursor:url(images_cursor/10.png), default;">White Plastic Garden Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alibaba.com/product-detail/Factory-Direct-High-Quality-Slat-Resin_60054580563.html" target="_blank" alt="11" style="cursor:url(images_cursor/11.png), default;">Factory Direct High Quality Slat Resin Plastic White Folding Chair for Party Rental Wedding Wholesale Garden Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alibaba.com/product-detail/Factory-Direct-High-Quality-Slat-Resin_60054580563.html" target="_blank" alt="12" style="cursor:url(images_cursor/12.png), default;">Factory Direct High Quality Slat Resin Plastic White Folding Chair for Party Rental Wedding Wholesale Garden Chair</a>
+                        </li>
+<!--3-->
+                        <li class="citem">
+                                <a href="http://www.tableschairsbarstools.com/tcb-grf-us421004.html" target="_blank" alt="19" style="cursor:url(images_cursor/19.png), default;">White Trinidad High Back Grosfillex Resin Finish Commercial Restaurant Dining Patio Poolside Arm Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.foodservicewarehouse.com/grosfillex/us0230/p338474.aspx" target="_blank" alt="20" style="cursor:url(images_cursor/20.png), default;">Miami Lowback Stacking Armchair</a>
+                            </li> 
+                        </ul>
+                     </div>    
+                </div>
+<!--1,4:1-10,60 -->
+                <div id="chairs9" class="cnames">
+                   <div class="img_whole"></div>
+                   <div class="caption">
+                        <ul>
+                         <li class="citem" >
+                            <a href="http://www.flatoutentertainment.com.au/service/tables-and-chairs" target="_blank" alt="1" style="cursor:url(images_cursor/1.png), default;" >1 White Plastic Stackable Chairs</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem"  >
+                            <a href="http://www.omegaeventservices.com/chairs" target="_blank" alt="2" style="cursor:url(images_cursor/2.png), default;">White Bistro Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="" style="cursor:url(images_cursor/3.png), default;"> Chair Pippee &ndash; White</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.cateringhiredevon.com/shop/chair-hire-devon/white-patio-chair-hire-devon/" target="_blank" alt="4" style="cursor:url(images_cursor/4.png), default;">White Patio Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.blasteventhire.co.uk/products/patio-chair-plastic" target="_blank" alt="5" style="cursor:url(images_cursor/5.png), default;">Patio Chair Plastic</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.canberraspitsandpartyhire.com/white-stacking-resin-chairs-hire.html" target="_blank" alt="6" style="cursor:url(images_cursor/6.png), default;">White Stacking Resin Chairs Hire</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.globalsources.com/si/AS/Fuzhou-Xurong/6008831244176/pdtl/White-Plastic-Dining-Chair/1074302874.htm" target="_blank" alt="7" style="cursor:url(images_cursor/7.png), default;">White Plastic Dining Chair With Arm for Restaurants</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alfrescohire.com/garden-furniture#prettyPhoto" target="_blank" alt="8" style="cursor:url(images_cursor/8.png), default;">White Plastic Patio Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://eventhireuk.com/resin-furniture-hire/bistro-chair-white" target="_blank" alt="9" style="cursor:url(images_cursor/9.png), default;">Bistro Chair White</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.plasticboxshop.co.uk/home-storage-c1/garden-and-outdoor-plastics-c6/plastic-chairs-c70/white-plastic-garden-chair-pack-of-50-11840-p370" target="_blank" alt="10" style="cursor:url(images_cursor/10.png), default;">White Plastic Garden Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alibaba.com/product-detail/Factory-Direct-High-Quality-Slat-Resin_60054580563.html" target="_blank" alt="11" style="cursor:url(images_cursor/11.png), default;">Factory Direct High Quality Slat Resin Plastic White Folding Chair for Party Rental Wedding Wholesale Garden Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alibaba.com/product-detail/Factory-Direct-High-Quality-Slat-Resin_60054580563.html" target="_blank" alt="12" style="cursor:url(images_cursor/12.png), default;">Factory Direct High Quality Slat Resin Plastic White Folding Chair for Party Rental Wedding Wholesale Garden Chair</a>
+                        </li>
+<!--4-->
+                        <li class="citem">
+                                <a href="http://www.amazon.co.uk/Scab-Design-Splendida-Stacking-Chair/dp/B00KE1K0Z0" target="_blank" alt="21" style="cursor:url(images_cursor/21.png), default;">Scab Design Splendida High Back Stacking Chair White - Garden Armchair - Plastic - Patio Chair in White - Anti static Finish &ndash; Outdoor Dining Armchair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.hireking.com.au/chair-hire-perth.shtml" target="_blank" alt="18" style="cursor:url(images_cursor/22.png), default;">White Bistro Chair Hire</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.kettlerusa.com/patio-furniture/resin/2021" target="_blank" alt="18" style="cursor:url(images_cursor/23.png), default;">Lord Stack Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.stardust.com/louis-ghost.html" target="_blank" alt="18" style="cursor:url(images_cursor/24.png), default;">Kartell Louis Ghost Chair by Philippe Starck</a>
+                            </li>
+
+
+                         </ul>             
+                    </div> 
+                </div>  
+<!--2,4-->    
+                <div id="chairs10" class="cnames">
+                   <div class="img_whole"></div>
+                   <div class="caption">
+                        <ul>
+<!--2-->
+                            <li class="citem">
+                                <a href="" alt="14" style="cursor:url(images_cursor/13.png), default;">Plastic Modern Stacking Patio Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.farmandfleet.com/products/810572-adams-manufacturing-calypso-mid-back-chair.html" target="_blank" alt="14" style="cursor:url(images_cursor/14.png), default;" >Adams Manufacturing Calypso Mid &ndash; Back Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.diy.com/departments/cuba-plastic-chair/535878_BQ.prd" target="_blank" alt="15" style="cursor:url(images_cursor/15.png), default;" >Cuba Plastic Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.pandorabay.it/prodotti/mobili-da-giardino/mobili-da-giardino-in-resina-grosfillex/sedie-e-poltrone-in-resina/sedia-grosfillex-bistrot-antracite-2-pezzi.html" target="_blank" alt="16" style="cursor:url(images_cursor/16.png), default;" >Sedia Grosfillex BISTROT Antracite - 2 pezzi</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.centroarredo.net/p-1842_sedia-mod-stella-di-mare-colore-bianco.html?utm_source=twenga&utm_campaign=twenga&utm_medium=cpc" target="_blank" alt="17" style="cursor:url(images_cursor/17.png), default;" >Sedia mod. stella di mare colore bianco</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.tableschairsbarstools.com/tcb-grf-us282304.html" target="_blank" alt="18" style="cursor:url(images_cursor/18.png), default;" >White Grosfillex Resin Finish Miami Lowback Restaurant Dining Patio Poolside Chair</a>
+                            </li>
+<!--4-->
+                            <li class="citem">
+                                <a href="http://www.amazon.co.uk/Scab-Design-Splendida-Stacking-Chair/dp/B00KE1K0Z0" target="_blank" alt="21" style="cursor:url(images_cursor/21.png), default;">Scab Design Splendida High Back Stacking Chair White - Garden Armchair - Plastic - Patio Chair in White - Anti static Finish &ndash; Outdoor Dining Armchair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.hireking.com.au/chair-hire-perth.shtml" target="_blank" alt="18" style="cursor:url(images_cursor/22.png), default;">White Bistro Chair Hire</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.kettlerusa.com/patio-furniture/resin/2021" target="_blank" alt="18" style="cursor:url(images_cursor/23.png), default;">Lord Stack Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.stardust.com/louis-ghost.html" target="_blank" alt="18" style="cursor:url(images_cursor/24.png), default;">Kartell Louis Ghost Chair by Philippe Starck</a>
+                            </li>                           
+                        </ul>    
+                     </div>
+                </div>
+<!--1,2,3-->
+                <div id="chairs11" class="cnames">
+                   <div class="img_whole"></div>
+                   <div class="caption">
+                        <ul>
+<!--1-->
+                           <li class="citem" >
+                            <a href="http://www.flatoutentertainment.com.au/service/tables-and-chairs" target="_blank" alt="1" style="cursor:url(images_cursor/1.png), default;" >1 White Plastic Stackable Chairs</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem"  >
+                            <a href="http://www.omegaeventservices.com/chairs" target="_blank" alt="2" style="cursor:url(images_cursor/2.png), default;">White Bistro Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="" style="cursor:url(images_cursor/3.png), default;"> Chair Pippee &ndash; White</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.cateringhiredevon.com/shop/chair-hire-devon/white-patio-chair-hire-devon/" target="_blank" alt="4" style="cursor:url(images_cursor/4.png), default;">White Patio Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.blasteventhire.co.uk/products/patio-chair-plastic" target="_blank" alt="5" style="cursor:url(images_cursor/5.png), default;">Patio Chair Plastic</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.canberraspitsandpartyhire.com/white-stacking-resin-chairs-hire.html" target="_blank" alt="6" style="cursor:url(images_cursor/6.png), default;">White Stacking Resin Chairs Hire</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.globalsources.com/si/AS/Fuzhou-Xurong/6008831244176/pdtl/White-Plastic-Dining-Chair/1074302874.htm" target="_blank" alt="7" style="cursor:url(images_cursor/7.png), default;">White Plastic Dining Chair With Arm for Restaurants</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alfrescohire.com/garden-furniture#prettyPhoto" target="_blank" alt="8" style="cursor:url(images_cursor/8.png), default;">White Plastic Patio Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://eventhireuk.com/resin-furniture-hire/bistro-chair-white" target="_blank" alt="9" style="cursor:url(images_cursor/9.png), default;">Bistro Chair White</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.plasticboxshop.co.uk/home-storage-c1/garden-and-outdoor-plastics-c6/plastic-chairs-c70/white-plastic-garden-chair-pack-of-50-11840-p370" target="_blank" alt="10" style="cursor:url(images_cursor/10.png), default;">White Plastic Garden Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alibaba.com/product-detail/Factory-Direct-High-Quality-Slat-Resin_60054580563.html" target="_blank" alt="11" style="cursor:url(images_cursor/11.png), default;">Factory Direct High Quality Slat Resin Plastic White Folding Chair for Party Rental Wedding Wholesale Garden Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alibaba.com/product-detail/Factory-Direct-High-Quality-Slat-Resin_60054580563.html" target="_blank" alt="12" style="cursor:url(images_cursor/12.png), default;">Factory Direct High Quality Slat Resin Plastic White Folding Chair for Party Rental Wedding Wholesale Garden Chair</a>
+                        </li>
+
+<!--2-->
+                        <li class="citem">
+                                <a href="" alt="14" style="cursor:url(images_cursor/13.png), default;">Plastic Modern Stacking Patio Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.farmandfleet.com/products/810572-adams-manufacturing-calypso-mid-back-chair.html" target="_blank" alt="14" style="cursor:url(images_cursor/14.png), default;" >Adams Manufacturing Calypso Mid &ndash; Back Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.diy.com/departments/cuba-plastic-chair/535878_BQ.prd" target="_blank" alt="15" style="cursor:url(images_cursor/15.png), default;" >Cuba Plastic Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.pandorabay.it/prodotti/mobili-da-giardino/mobili-da-giardino-in-resina-grosfillex/sedie-e-poltrone-in-resina/sedia-grosfillex-bistrot-antracite-2-pezzi.html" target="_blank" alt="16" style="cursor:url(images_cursor/16.png), default;" >Sedia Grosfillex BISTROT Antracite - 2 pezzi</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.centroarredo.net/p-1842_sedia-mod-stella-di-mare-colore-bianco.html?utm_source=twenga&utm_campaign=twenga&utm_medium=cpc" target="_blank" alt="17" style="cursor:url(images_cursor/17.png), default;" >Sedia mod. stella di mare colore bianco</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.tableschairsbarstools.com/tcb-grf-us282304.html" target="_blank" alt="18" style="cursor:url(images_cursor/18.png), default;" >White Grosfillex Resin Finish Miami Lowback Restaurant Dining Patio Poolside Chair</a>
+                            </li>
+<!--3-->
+                            <li class="citem">
+                                <a href="http://www.tableschairsbarstools.com/tcb-grf-us421004.html" target="_blank" alt="19" style="cursor:url(images_cursor/19.png), default;">White Trinidad High Back Grosfillex Resin Finish Commercial Restaurant Dining Patio Poolside Arm Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.foodservicewarehouse.com/grosfillex/us0230/p338474.aspx" target="_blank" alt="20" style="cursor:url(images_cursor/20.png), default;">Miami Lowback Stacking Armchair</a>
+                            </li>
+
+                        </ul>   
+                    </div>    
+                </div>
+<!--1,2,4-->
+                <div id="chairs12" class="cnames">
+                   <div class="img_whole"></div>
+                   <div class="caption">
+                        <ul>
+<!--1-->
+                        <li class="citem" >
+                            <a href="http://www.flatoutentertainment.com.au/service/tables-and-chairs" target="_blank" alt="1" style="cursor:url(images_cursor/1.png), default;" >1 White Plastic Stackable Chairs</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem"  >
+                            <a href="http://www.omegaeventservices.com/chairs" target="_blank" alt="2" style="cursor:url(images_cursor/2.png), default;">White Bistro Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="" style="cursor:url(images_cursor/3.png), default;"> Chair Pippee &ndash; White</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.cateringhiredevon.com/shop/chair-hire-devon/white-patio-chair-hire-devon/" target="_blank" alt="4" style="cursor:url(images_cursor/4.png), default;">White Patio Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.blasteventhire.co.uk/products/patio-chair-plastic" target="_blank" alt="5" style="cursor:url(images_cursor/5.png), default;">Patio Chair Plastic</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.canberraspitsandpartyhire.com/white-stacking-resin-chairs-hire.html" target="_blank" alt="6" style="cursor:url(images_cursor/6.png), default;">White Stacking Resin Chairs Hire</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.globalsources.com/si/AS/Fuzhou-Xurong/6008831244176/pdtl/White-Plastic-Dining-Chair/1074302874.htm" target="_blank" alt="7" style="cursor:url(images_cursor/7.png), default;">White Plastic Dining Chair With Arm for Restaurants</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alfrescohire.com/garden-furniture#prettyPhoto" target="_blank" alt="8" style="cursor:url(images_cursor/8.png), default;">White Plastic Patio Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://eventhireuk.com/resin-furniture-hire/bistro-chair-white" target="_blank" alt="9" style="cursor:url(images_cursor/9.png), default;">Bistro Chair White</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.plasticboxshop.co.uk/home-storage-c1/garden-and-outdoor-plastics-c6/plastic-chairs-c70/white-plastic-garden-chair-pack-of-50-11840-p370" target="_blank" alt="10" style="cursor:url(images_cursor/10.png), default;">White Plastic Garden Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alibaba.com/product-detail/Factory-Direct-High-Quality-Slat-Resin_60054580563.html" target="_blank" alt="11" style="cursor:url(images_cursor/11.png), default;">Factory Direct High Quality Slat Resin Plastic White Folding Chair for Party Rental Wedding Wholesale Garden Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alibaba.com/product-detail/Factory-Direct-High-Quality-Slat-Resin_60054580563.html" target="_blank" alt="12" style="cursor:url(images_cursor/12.png), default;">Factory Direct High Quality Slat Resin Plastic White Folding Chair for Party Rental Wedding Wholesale Garden Chair</a>
+                        </li>
+<!--2-->
+                        <li class="citem">
+                                <a href="" alt="14" style="cursor:url(images_cursor/13.png), default;">Plastic Modern Stacking Patio Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.farmandfleet.com/products/810572-adams-manufacturing-calypso-mid-back-chair.html" target="_blank" alt="14" style="cursor:url(images_cursor/14.png), default;" >Adams Manufacturing Calypso Mid &ndash; Back Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.diy.com/departments/cuba-plastic-chair/535878_BQ.prd" target="_blank" alt="15" style="cursor:url(images_cursor/15.png), default;" >Cuba Plastic Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.pandorabay.it/prodotti/mobili-da-giardino/mobili-da-giardino-in-resina-grosfillex/sedie-e-poltrone-in-resina/sedia-grosfillex-bistrot-antracite-2-pezzi.html" target="_blank" alt="16" style="cursor:url(images_cursor/16.png), default;" >Sedia Grosfillex BISTROT Antracite - 2 pezzi</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.centroarredo.net/p-1842_sedia-mod-stella-di-mare-colore-bianco.html?utm_source=twenga&utm_campaign=twenga&utm_medium=cpc" target="_blank" alt="17" style="cursor:url(images_cursor/17.png), default;" >Sedia mod. stella di mare colore bianco</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.tableschairsbarstools.com/tcb-grf-us282304.html" target="_blank" alt="18" style="cursor:url(images_cursor/18.png), default;" >White Grosfillex Resin Finish Miami Lowback Restaurant Dining Patio Poolside Chair</a>
+                            </li>
+<!--4-->
+                            <li class="citem">
+                                <a href="http://www.amazon.co.uk/Scab-Design-Splendida-Stacking-Chair/dp/B00KE1K0Z0" target="_blank" alt="21" style="cursor:url(images_cursor/21.png), default;">Scab Design Splendida High Back Stacking Chair White - Garden Armchair - Plastic - Patio Chair in White - Anti static Finish &ndash; Outdoor Dining Armchair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.hireking.com.au/chair-hire-perth.shtml" target="_blank" alt="18" style="cursor:url(images_cursor/22.png), default;">White Bistro Chair Hire</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.kettlerusa.com/patio-furniture/resin/2021" target="_blank" alt="18" style="cursor:url(images_cursor/23.png), default;">Lord Stack Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.stardust.com/louis-ghost.html" target="_blank" alt="18" style="cursor:url(images_cursor/24.png), default;">Kartell Louis Ghost Chair by Philippe Starck</a>
+                            </li>
+
+                    </div>    
+                </div>
+<!--1,3,4-->
+                   <div id="chairs13" class="cnames">
+                   <div class="img_whole"></div>
+                   <div class="caption">
+                        <ul>
+<!--1-->
+                        <li class="citem" >
+                            <a href="http://www.flatoutentertainment.com.au/service/tables-and-chairs" target="_blank" alt="1" style="cursor:url(images_cursor/1.png), default;" >1 White Plastic Stackable Chairs</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem"  >
+                            <a href="http://www.omegaeventservices.com/chairs" target="_blank" alt="2" style="cursor:url(images_cursor/2.png), default;">White Bistro Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="" style="cursor:url(images_cursor/3.png), default;"> Chair Pippee &ndash; White</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.cateringhiredevon.com/shop/chair-hire-devon/white-patio-chair-hire-devon/" target="_blank" alt="4" style="cursor:url(images_cursor/4.png), default;">White Patio Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.blasteventhire.co.uk/products/patio-chair-plastic" target="_blank" alt="5" style="cursor:url(images_cursor/5.png), default;">Patio Chair Plastic</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.canberraspitsandpartyhire.com/white-stacking-resin-chairs-hire.html" target="_blank" alt="6" style="cursor:url(images_cursor/6.png), default;">White Stacking Resin Chairs Hire</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.globalsources.com/si/AS/Fuzhou-Xurong/6008831244176/pdtl/White-Plastic-Dining-Chair/1074302874.htm" target="_blank" alt="7" style="cursor:url(images_cursor/7.png), default;">White Plastic Dining Chair With Arm for Restaurants</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alfrescohire.com/garden-furniture#prettyPhoto" target="_blank" alt="8" style="cursor:url(images_cursor/8.png), default;">White Plastic Patio Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://eventhireuk.com/resin-furniture-hire/bistro-chair-white" target="_blank" alt="9" style="cursor:url(images_cursor/9.png), default;">Bistro Chair White</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.plasticboxshop.co.uk/home-storage-c1/garden-and-outdoor-plastics-c6/plastic-chairs-c70/white-plastic-garden-chair-pack-of-50-11840-p370" target="_blank" alt="10" style="cursor:url(images_cursor/10.png), default;">White Plastic Garden Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alibaba.com/product-detail/Factory-Direct-High-Quality-Slat-Resin_60054580563.html" target="_blank" alt="11" style="cursor:url(images_cursor/11.png), default;">Factory Direct High Quality Slat Resin Plastic White Folding Chair for Party Rental Wedding Wholesale Garden Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alibaba.com/product-detail/Factory-Direct-High-Quality-Slat-Resin_60054580563.html" target="_blank" alt="12" style="cursor:url(images_cursor/12.png), default;">Factory Direct High Quality Slat Resin Plastic White Folding Chair for Party Rental Wedding Wholesale Garden Chair</a>
+                        </li>
+<!--3-->
+                        <li class="citem">
+                                <a href="http://www.tableschairsbarstools.com/tcb-grf-us421004.html" target="_blank" alt="19" style="cursor:url(images_cursor/19.png), default;">White Trinidad High Back Grosfillex Resin Finish Commercial Restaurant Dining Patio Poolside Arm Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.foodservicewarehouse.com/grosfillex/us0230/p338474.aspx" target="_blank" alt="20" style="cursor:url(images_cursor/20.png), default;">Miami Lowback Stacking Armchair</a>
+                            </li>
+<!--4-->            
+                            <li class="citem">
+                                <a href="http://www.amazon.co.uk/Scab-Design-Splendida-Stacking-Chair/dp/B00KE1K0Z0" target="_blank" alt="21" style="cursor:url(images_cursor/21.png), default;">Scab Design Splendida High Back Stacking Chair White - Garden Armchair - Plastic - Patio Chair in White - Anti static Finish &ndash; Outdoor Dining Armchair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.hireking.com.au/chair-hire-perth.shtml" target="_blank" alt="18" style="cursor:url(images_cursor/22.png), default;">White Bistro Chair Hire</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.kettlerusa.com/patio-furniture/resin/2021" target="_blank" alt="18" style="cursor:url(images_cursor/23.png), default;">Lord Stack Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.stardust.com/louis-ghost.html" target="_blank" alt="18" style="cursor:url(images_cursor/24.png), default;">Kartell Louis Ghost Chair by Philippe Starck</a>
+                            </li>
+                        </ul>
+                   </div>    
+                </div>
+<!--2,3,4-->
+                <div id="chairs14" class="cnames">
+                   <div class="img_whole"></div>
+                   <div class="caption">
+                    <ul>
+<!--2-->     
+                        <li class="citem">
+                                <a href="" alt="14" style="cursor:url(images_cursor/13.png), default;">Plastic Modern Stacking Patio Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.farmandfleet.com/products/810572-adams-manufacturing-calypso-mid-back-chair.html" target="_blank" alt="14" style="cursor:url(images_cursor/14.png), default;" >Adams Manufacturing Calypso Mid &ndash; Back Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.diy.com/departments/cuba-plastic-chair/535878_BQ.prd" target="_blank" alt="15" style="cursor:url(images_cursor/15.png), default;" >Cuba Plastic Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.pandorabay.it/prodotti/mobili-da-giardino/mobili-da-giardino-in-resina-grosfillex/sedie-e-poltrone-in-resina/sedia-grosfillex-bistrot-antracite-2-pezzi.html" target="_blank" alt="16" style="cursor:url(images_cursor/16.png), default;" >Sedia Grosfillex BISTROT Antracite - 2 pezzi</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.centroarredo.net/p-1842_sedia-mod-stella-di-mare-colore-bianco.html?utm_source=twenga&utm_campaign=twenga&utm_medium=cpc" target="_blank" alt="17" style="cursor:url(images_cursor/17.png), default;" >Sedia mod. stella di mare colore bianco</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.tableschairsbarstools.com/tcb-grf-us282304.html" target="_blank" alt="18" style="cursor:url(images_cursor/18.png), default;" >White Grosfillex Resin Finish Miami Lowback Restaurant Dining Patio Poolside Chair</a>
+                            </li>
+<!--3-->
+                            <li class="citem">
+                                <a href="http://www.tableschairsbarstools.com/tcb-grf-us421004.html" target="_blank" alt="19" style="cursor:url(images_cursor/19.png), default;">White Trinidad High Back Grosfillex Resin Finish Commercial Restaurant Dining Patio Poolside Arm Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.foodservicewarehouse.com/grosfillex/us0230/p338474.aspx" target="_blank" alt="20" style="cursor:url(images_cursor/20.png), default;">Miami Lowback Stacking Armchair</a>
+                            </li>
+<!--4-->
+                            <li class="citem">
+                                <a href="http://www.amazon.co.uk/Scab-Design-Splendida-Stacking-Chair/dp/B00KE1K0Z0" target="_blank" alt="21" style="cursor:url(images_cursor/21.png), default;">Scab Design Splendida High Back Stacking Chair White - Garden Armchair - Plastic - Patio Chair in White - Anti static Finish &ndash; Outdoor Dining Armchair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.hireking.com.au/chair-hire-perth.shtml" target="_blank" alt="18" style="cursor:url(images_cursor/22.png), default;">White Bistro Chair Hire</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.kettlerusa.com/patio-furniture/resin/2021" target="_blank" alt="18" style="cursor:url(images_cursor/23.png), default;">Lord Stack Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.stardust.com/louis-ghost.html" target="_blank" alt="18" style="cursor:url(images_cursor/24.png), default;">Kartell Louis Ghost Chair by Philippe Starck</a>
+                            </li>
+                    </ul>
+                    </div>    
+                </div>
+<!--1,2,3,4-->
+                   <div id="chairs15" class="cnames">
+                   <div class="img_whole"></div>
+                    <div class="caption">
+                    <ul>
+<!--1-->
+                       <li class="citem" >
+                            <a href="http://www.flatoutentertainment.com.au/service/tables-and-chairs" target="_blank" alt="1" style="cursor:url(images_cursor/1.png), default;" >1 White Plastic Stackable Chairs</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem"  >
+                            <a href="http://www.omegaeventservices.com/chairs" target="_blank" alt="2" style="cursor:url(images_cursor/2.png), default;">White Bistro Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="" style="cursor:url(images_cursor/3.png), default;"> Chair Pippee &ndash; White</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.cateringhiredevon.com/shop/chair-hire-devon/white-patio-chair-hire-devon/" target="_blank" alt="4" style="cursor:url(images_cursor/4.png), default;">White Patio Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.blasteventhire.co.uk/products/patio-chair-plastic" target="_blank" alt="5" style="cursor:url(images_cursor/5.png), default;">Patio Chair Plastic</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.canberraspitsandpartyhire.com/white-stacking-resin-chairs-hire.html" target="_blank" alt="6" style="cursor:url(images_cursor/6.png), default;">White Stacking Resin Chairs Hire</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.globalsources.com/si/AS/Fuzhou-Xurong/6008831244176/pdtl/White-Plastic-Dining-Chair/1074302874.htm" target="_blank" alt="7" style="cursor:url(images_cursor/7.png), default;">White Plastic Dining Chair With Arm for Restaurants</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alfrescohire.com/garden-furniture#prettyPhoto" target="_blank" alt="8" style="cursor:url(images_cursor/8.png), default;">White Plastic Patio Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://eventhireuk.com/resin-furniture-hire/bistro-chair-white" target="_blank" alt="9" style="cursor:url(images_cursor/9.png), default;">Bistro Chair White</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.plasticboxshop.co.uk/home-storage-c1/garden-and-outdoor-plastics-c6/plastic-chairs-c70/white-plastic-garden-chair-pack-of-50-11840-p370" target="_blank" alt="10" style="cursor:url(images_cursor/10.png), default;">White Plastic Garden Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alibaba.com/product-detail/Factory-Direct-High-Quality-Slat-Resin_60054580563.html" target="_blank" alt="11" style="cursor:url(images_cursor/11.png), default;">Factory Direct High Quality Slat Resin Plastic White Folding Chair for Party Rental Wedding Wholesale Garden Chair</a>
+                        </li>
+                        <li class="blackrule"></li>
+                        <li class="citem">
+                            <a href="http://www.alibaba.com/product-detail/Factory-Direct-High-Quality-Slat-Resin_60054580563.html" target="_blank" alt="12" style="cursor:url(images_cursor/12.png), default;">Factory Direct High Quality Slat Resin Plastic White Folding Chair for Party Rental Wedding Wholesale Garden Chair</a>
+                        </li>
+<!--2-->
+                        <li class="citem">
+                                <a href="" alt="14" style="cursor:url(images_cursor/13.png), default;">Plastic Modern Stacking Patio Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.farmandfleet.com/products/810572-adams-manufacturing-calypso-mid-back-chair.html" target="_blank" alt="14" style="cursor:url(images_cursor/14.png), default;" >Adams Manufacturing Calypso Mid &ndash; Back Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.diy.com/departments/cuba-plastic-chair/535878_BQ.prd" target="_blank" alt="15" style="cursor:url(images_cursor/15.png), default;" >Cuba Plastic Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.pandorabay.it/prodotti/mobili-da-giardino/mobili-da-giardino-in-resina-grosfillex/sedie-e-poltrone-in-resina/sedia-grosfillex-bistrot-antracite-2-pezzi.html" target="_blank" alt="16" style="cursor:url(images_cursor/16.png), default;" >Sedia Grosfillex BISTROT Antracite - 2 pezzi</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.centroarredo.net/p-1842_sedia-mod-stella-di-mare-colore-bianco.html?utm_source=twenga&utm_campaign=twenga&utm_medium=cpc" target="_blank" alt="17" style="cursor:url(images_cursor/17.png), default;" >Sedia mod. stella di mare colore bianco</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.tableschairsbarstools.com/tcb-grf-us282304.html" target="_blank" alt="18" style="cursor:url(images_cursor/18.png), default;" >White Grosfillex Resin Finish Miami Lowback Restaurant Dining Patio Poolside Chair</a>
+                            </li>
+<!--3-->
+                            <li class="citem">
+                                <a href="http://www.tableschairsbarstools.com/tcb-grf-us421004.html" target="_blank" alt="19" style="cursor:url(images_cursor/19.png), default;">White Trinidad High Back Grosfillex Resin Finish Commercial Restaurant Dining Patio Poolside Arm Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.foodservicewarehouse.com/grosfillex/us0230/p338474.aspx" target="_blank" alt="20" style="cursor:url(images_cursor/20.png), default;">Miami Lowback Stacking Armchair</a>
+                            </li>
+<!--4-->
+                            <li class="citem">
+                                <a href="http://www.amazon.co.uk/Scab-Design-Splendida-Stacking-Chair/dp/B00KE1K0Z0" target="_blank" alt="21" style="cursor:url(images_cursor/21.png), default;">Scab Design Splendida High Back Stacking Chair White - Garden Armchair - Plastic - Patio Chair in White - Anti static Finish &ndash; Outdoor Dining Armchair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.hireking.com.au/chair-hire-perth.shtml" target="_blank" alt="18" style="cursor:url(images_cursor/22.png), default;">White Bistro Chair Hire</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.kettlerusa.com/patio-furniture/resin/2021" target="_blank" alt="18" style="cursor:url(images_cursor/23.png), default;">Lord Stack Chair</a>
+                            </li>
+                            <li class="blackrule"></li>
+                            <li class="citem">
+                                <a href="http://www.stardust.com/louis-ghost.html" target="_blank" alt="18" style="cursor:url(images_cursor/24.png), default;">Kartell Louis Ghost Chair by Philippe Starck</a>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+        </div>
+<!--About-->
+    	<div id="about">
+           <li style="padding-bottom:30px;font-size:23px;">About</li>
+            <div class="about_column">   
+        		<li>
+                    All Possible Chairs is a profile of a <a href="http://en.wikipedia.org/wiki/Monobloc_%28chair%29" target="_blank">Monobloc chair</a>. The Monobloc chair is the most common plastic chair that is manufactured from one piece of plastic in a single process. Every 70 seconds on earth, a single chair is produced and sold for around three dollars. As this chair is so quick and cheap to make, thousands of different models have been produced.
+        			<br><br>
+        			All Possible Chairs is an attempt to represent Monobloc chair as a comprehensible object that embraces the variety of iterations and its speedy proliferation. If you select a price from the list, All Possible Chairs will show you a single chair that consists of all results matching the criteria. It uses a responsive framework<font style="font-size:13px;">fig.1</font> that changes by equally dividing an image into the same number of setions. 
+                    <br><br>
+                    The list of chairs are updated occasionally. If you find any Monobloc chairs online, please send the link <a href="mailto:mineh.kim@gmail.com">here</a>.
+                    <br><br><br>
+                   <!-- <font style="font-size:15px;">copyright &#9426; 2015 Minkyoung Kim</font>-->
+                </li>
+                <li> 
+                 <img src="images/framework.svg"><br><br><br>
+                 <font style="font-size:15px;">Fig.1 All Possible Chairs, Shematic diagrams</font>
+                 <br><br>
+                </li> 
+            </div>
+                <li style="padding-bottom:30px; padding-top:50px;font-size:23px;">Colophon</li>
+            <div class="about_column">
+                 <li style="line-height:28px;">Concept and realization: <a href="http://minkyoungkim.com">Minkyoung Kim</a><br>
+                    Programming assistant: <a href="http://chihaoyo.net/projects/#co">Chihao Yo</a><br></li>
+                    
+                <li>Typeface: <a href="http://www.linotype.com/53226/linotype-univers-family.html">Linotype Universe</a> by <a href="http://www.linotype.com/53226/linotype-univers-family.html">Adrian Frutiger</a></li>
+                <br>
+                
+            </div>
+            <div class="about_column">
+                <li><br><br>(c) 2015 Minkyoung Kim all rights researved.</li>
+                <li style="color:#FFF;"> &#9426; 2015 Minkyoung Kim All rights researved.</li>
+            </div>
+            <div style="height:50px;"> </div>
+          </div>
+<!--Book-->
+           <div id="l_book">
+            <div class="l_book_info">
+                 <div id="pselecter-menu"></div>
+                    <div id="mybook">
+                        <div><img src="images_book/b1.jpg" width="100%"></div>
+                        <div><img src="images_book/b2.jpg" width="100%"></div>
+                        <div><img src="images_book/b3.jpg" width="100%"></div>
+                        <div><img src="images_book/b4.jpg" width="100%"></div>
+                        <div><img src="images_book/b5.jpg" width="100%"></div>
+                        <div><img src="images_book/b6.jpg" width="100%"></div>
+                        <div><img src="images_book/b7.jpg" width="100%"></div>
+                        <div><img src="images_book/b8.jpg" width="100%"></div>
+                        <div><img src="images_book/b9.jpg" width="100%"></div>
+                        <div><img src="images_book/b10.jpg" width="100%"></div>
+                        <div><img src="images_book/b11.jpg" width="100%"></div>
+                        <div><img src="images_book/b12.jpg" width="100%"></div>
+                        <div><img src="images_book/b13.jpg" width="100%"></div>
+                        <div><img src="images_book/b14.jpg" width="100%"></div>
+                        <div><img src="images_book/b15.jpg" width="100%"></div>
+                        <div><img src="images_book/b16.jpg" width="100%"></div>
+                        <div><img src="images_book/b17.jpg" width="100%"></div>
+                        <div><img src="images_book/b18.jpg" width="100%"></div>
+                        <div><img src="images_book/b19.jpg" width="100%"></div>
+                        <div><img src="images_book/b20.jpg" width="100%"></div>
+                        <div><img src="images_book/b21.jpg" width="100%"></div>
+                        <div><img src="images_book/b22.jpg" width="100%"></div>
+                        <div><img src="images_book/b23.jpg" width="100%"></div>
+                        <div><img src="images_book/b24.jpg" width="100%"></div>
+                        <div><img src="images_book/b25.jpg" width="100%"></div>
+                        <div><img src="images_book/b26.jpg" width="100%"></div>
+                        <div><img src="images_book/b27.jpg" width="100%"></div>
+                        <div><img src="images_book/b28.jpg" width="100%"></div>
+                        <div><img src="images_book/b29.jpg" width="100%"></div>
+                        <div><img src="images_book/b30.jpg" width="100%"></div>
+                        <div><img src="images_book/b31.jpg" width="100%"></div>
+                        <div><img src="images_book/b32.jpg" width="100%"></div>
+                        <div><img src="images_book/b33.jpg" width="100%"></div>
+                        <div><img src="images_book/b34.jpg" width="100%"></div>
+                        <div><img src="images_book/b35.jpg" width="100%"></div>
+                        <div><img src="images_book/b36.jpg" width="100%"></div>
+                        <div><img src="images_book/b37.jpg" width="100%"></div>
+                        <div><img src="images_book/b38.jpg" width="100%"></div>
+                        <div><img src="images_book/b39.jpg" width="100%"></div>
+                        <div><img src="images_book/b40.jpg" width="100%"></div>
+                        <div><img src="images_book/b41.jpg" width="100%"></div>
+                        <div><img src="images_book/b42.jpg" width="100%"></div>
+                        <div><img src="images_book/b43.jpg" width="100%"></div>
+                        <div><img src="images_book/b44.jpg" width="100%"></div>
+                        <div><img src="images_book/b45.jpg" width="100%"></div>
+                        <div><img src="images_book/b46.jpg" width="100%"></div>
+                        <div><img src="images_book/b47.jpg" width="100%"></div>
+                        <div><img src="images_book/b48.jpg" width="100%"></div>
+                        <div><img src="images_book/b49.jpg" width="100%"></div>
+                        <div><img src="images_book/b50.jpg" width="100%"></div>
+                        <div><img src="images_book/b51.jpg" width="100%"></div>
+                        <div><img src="images_book/b52.jpg" width="100%"></div>
+                    </div>
+                </section>
+                <footer></footer>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+                <script> window.jQuery || document.write('<script src="js/jquery-2.1.0.min.js"><\/script>') </script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+                <script> window.jQuery.ui || document.write('<script src="js/jquery-ui-1.10.4.min.js"><\/script>') </script>
+                <script src="js/jquery.easing.1.3.js"></script>
+                <script src="js/jquery.booklet.latest.js"></script>
+                <script>
+                    $(function () {     
+                        $("#mybook").booklet();
+                    });
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
